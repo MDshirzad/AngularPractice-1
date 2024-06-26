@@ -1,0 +1,44 @@
+ 
+
+
+<table class="table   table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+     @for(item of Users;track $index){
+      <tr>
+        <th scope="row">{{$index+1}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.familyName}}</td>
+        <td>{{item.age}}</td>
+      </tr>
+     }
+    </tbody>
+  </table>
+  <div>
+  <button   class="btn btn-success    centercf" >Add(+)</button>
+ 
+  <div  >
+    <form>
+  <div   class="w-50 mt-5">
+    
+    <input type="text" class="form-control" id="name" placeholder="Your Name">
+  </div>
+  <div  class="w-50 mt-3">
+    
+    <input type="text" class="form-control" id="lastName" placeholder="Your LastName">
+  </div>
+  <div  class="w-50 mt-3">
+    
+    <input type="text" class="form-control" id="age" placeholder="Your Age">
+  </div>
+</form>
+</div>
+<button   class="btn btn-warning   mt-3 w-50    " >Save</button>
