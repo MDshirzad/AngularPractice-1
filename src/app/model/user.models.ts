@@ -6,4 +6,11 @@ export class User {
        
         
     }
+    
+    clear(){
+    this.name=''
+    this.familyName=''
+    this.age=0
+    }
+
 }
